@@ -29,8 +29,7 @@ class Example(QtGui.QWidget):
         self.cb.setFocusPolicy(QtCore.Qt.NoFocus)   # 禁用焦点
         self.cb.move(10, 10)
         self.cb.toggle()    # 选中复选框
-        self.connect(self.cb, QtCore.SIGNAL('stateChanged(int)'),
-            self.changeTitle)
+        self.connect(self.cb, QtCore.SIGNAL('stateChanged(int)'), self.changeTitle)
 
     def changeTitle(self, value):
         # 复选框被选中，标题为Checkbox；复选框未被选中，标题为空
