@@ -1,4 +1,4 @@
-# Learn PyQt
+# PyQt
 
 Code of the Tutorials:
 
